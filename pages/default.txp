@@ -7,7 +7,10 @@
     <title><txp:page_title /></title>
 
     <!-- CSS -->
-    <txp:css format="link" media="" />
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/normalize.css"><!-- Boilerplate -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/main.css"><!-- Boilerplate -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/style.css"><!-- My styles -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/prism.css"><!-- Prism.js <code> highlighter -->
     <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/default.css"> -->
 
     <meta name="generator" content="Textpattern CMS">
