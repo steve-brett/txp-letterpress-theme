@@ -85,6 +85,7 @@
                     <txp:if_variable name="front-page">
                         <!-- links by default to form: 'default.txp' unless you specify a different form -->
                         <txp:article limit="5" />
+                        <p>View <a href="<txp:site_url />/articles/">more articles</a>.</p>
 
                     <txp:else />
                         <!-- else is this an article author list? -->
