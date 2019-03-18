@@ -62,7 +62,8 @@ html {
     grid-column-end: 3;
     margin: 0;
   }
-  #page__header, footer {
+  #page__header, footer,
+  ul.posts {
     margin-left: calc(36vw - 5rem);
   }
   .portfolio {
@@ -107,14 +108,16 @@ footer {
   margin-bottom: 1rem;
 }
 
-#main-nav__list {
+.main-nav__list {
   padding: 0;
   margin: 0;
   line-height: 1;
+  display: flex;
+  list-style: none;
+  align-items: baseline;
 }
 
 .main-nav__item {
-  display: inline;
   font-size: 2rem;
   margin: 0 .7rem 0 0;
 }
@@ -123,12 +126,9 @@ footer {
   content: '\002E';
   font-family: 'orotundheavy', Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   color: var(--contrast-color);
-  padding-left: .7rem;
-  font-size: 3rem;
   position: relative;
-  top: -0.3rem;
-
-}
+  padding-left: .7rem;
+  }
 
 .main-nav__item a {
   font-family: 'orotundheavy', Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
@@ -140,23 +140,58 @@ footer {
   text-decoration: underline;
 }
 
+/* Footer nav */
+#footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#page__header:after,
+#page__footer:before {
+    display: block;
+    content: '';
+    position: relative;
+    width: 100%; /* Or set rem value? */
+    height: 2px;
+    background-color: var(--contrast-color);
+    background-clip: content-box;
+    padding: 1px 0;
+    border-top: 1px solid var(--contrast-color);
+    border-bottom: 1px solid var(--contrast-color);
+}
+
+  #page__header:after {
+    margin-bottom: 2rem;
+  }
+
+  #page__footer:before {
+    margin-top: 2rem;
+  }
+
 /* Article header metadata */
 .article__meta {
+  display: flex;
   list-style: none;
   padding: 0;
   margin-bottom: 0.4rem;
   color: #444;
-}
 
-.article__meta > * {
-  margin: 0;
-}
-
-time {
   font-feature-settings: 'smcp' 1,'c2sc' 1;
   font-variant: small-caps;
   text-transform: lowercase;
   font-variant-numeric: ordinal;
+}
+
+.article__meta > li {
+  margin: 0 .3rem 0 0;
+}
+
+.article__meta > li:not(:last-child):after {
+  content: '|';
+  margin-left: .1rem;
+  position: relative;
+  color: #ccc;
 }
 
 /* Text */
@@ -168,16 +203,6 @@ time {
   font-size: 3.6rem;
   margin-top: 0.2rem;
   margin-bottom: 0;
-}
-
-
-hr.page {
-  height: 2px;
-  background-color: var(--contrast-color);
-  background-clip: content-box;
-  padding: 1px 0;
-  border-top: 1px solid var(--contrast-color);
-  border-bottom: 1px solid var(--contrast-color);
 }
 
 article hr {
