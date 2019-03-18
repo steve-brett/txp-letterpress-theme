@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><txp:page_title /></title>
 
+    <!-- Google font API -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/normalize.css"><!-- Boilerplate -->
     <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/main.css"><!-- Boilerplate -->
@@ -60,6 +63,10 @@
         <body class="listing-page" itemscope itemtype="https://schema.org/CollectionPage">
     </txp:if_search>
 </txp:if_variable>
+<!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
 
     <txp:output_form form="body_header" />
 
