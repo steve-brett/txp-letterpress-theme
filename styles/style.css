@@ -126,9 +126,11 @@ footer {
   content: '\002E';
   font-family: 'orotundheavy', Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   color: var(--contrast-color);
-  position: relative;
   padding-left: .7rem;
-  }
+  font-size: 3rem;
+  position: relative;
+  top: -0.3rem;
+}
 
 .main-nav__item a {
   font-family: 'orotundheavy', Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
