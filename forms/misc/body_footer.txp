@@ -1,3 +1,14 @@
 <footer class="site-footer">
+  <!-- feed links, default flavor is RSS, so we don't need to specify a flavor on the first feed_link -->
+  <p><txp:feed_link class="feed-rss" label="RSS" /> / <txp:feed_link class="feed-atom" flavor="atom" label="Atom" /></p>
+
+  <!-- if links exist, renders a links list -->
+  <txp:evaluate test="linklist">
+      <section>
+          <h4><txp:text item="links" /></h4>
+          <!-- links by default to form: 'plainlinks.txp' unless you specify a different form -->
+          <txp:linklist wraptag="ul" break="li" />
+      </section>
+  </txp:evaluate>
     <p><small><txp:text item="published_with" /> <a rel="external" href="https://textpattern.com/" title="<txp:text item="go_txp_com" />">Textpattern CMS</a></small></p>
 </footer>
