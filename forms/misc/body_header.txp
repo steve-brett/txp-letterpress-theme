@@ -1,5 +1,9 @@
 <header id="page__header">
-    <h2 class="logo"><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
+    <h2 class="logo">
+    <!--<txp:link_to_home>-->
+        <txp:site_name />
+    <!--</txp:link_to_home>-->
+    </h2>
     <txp:evaluate>
         <h3 class="slogan"><txp:site_slogan /></h3>
     </txp:evaluate>
