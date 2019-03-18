@@ -3,11 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title><txp:error_status /></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><txp:page_title /></title>
+
+    <!-- Google font API -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600" rel="stylesheet">
 
     <!-- CSS -->
-    <txp:css format="link" media="" />
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/normalize.css"><!-- Boilerplate -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/main.css"><!-- Boilerplate -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/style.css"><!-- My styles -->
+    <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/prism.css"><!-- Prism.js <code> highlighter -->
     <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/default.css"> -->
 
     <meta name="generator" content="Textpattern CMS">
