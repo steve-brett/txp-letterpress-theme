@@ -215,7 +215,7 @@ article hr {
 p, blockquote, ul, ol, cite,
 pre,
 figure, figcaption,
-.article__header  {
+.article__header, .images  {
   margin-top: 0;
   margin-bottom: 1rem;
 }
