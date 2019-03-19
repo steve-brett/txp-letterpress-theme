@@ -187,8 +187,9 @@ footer {
   color: #444;
 
   font-feature-settings: 'smcp' 1,'c2sc' 1;
-  font-variant: small-caps;
-  text-transform: lowercase;
+  /*font-variant: small-caps;
+  text-transform: lowercase;*/
+  font-size: .8rem;
   font-variant-numeric: ordinal;
 }
 
@@ -201,6 +202,17 @@ footer {
   margin-left: .1rem;
   position: relative;
   color: #ccc;
+}
+
+/* links */
+.linklist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.linklist li {
+  margin-right: 1rem;
 }
 
 /* Text */
