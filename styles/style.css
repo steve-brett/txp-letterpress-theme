@@ -213,6 +213,10 @@ footer {
   margin-bottom: 0;
 }
 
+article {
+  margin-bottom: 2rem;
+}
+
 article hr {
   width: 90%;
   margin-bottom: 2rem;
