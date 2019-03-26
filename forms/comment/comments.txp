@@ -29,7 +29,7 @@
     </h4>
 
     <!-- also add a 'since' to show comment freshness -->
-    <p class="footnote">
+    <p class="footnote comment__meta">
         <time datetime="<txp:comment_time format="iso8601" />" itemprop="dateCreated">
             <txp:comment_time />
             (<txp:comment_time format="since" />)
