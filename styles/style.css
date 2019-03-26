@@ -53,8 +53,9 @@ html {
 @media all and (min-width:960px) {
   main {
     display: grid;
-    grid-template-columns: calc(36vw - 5rem) /*minmax(calc(36vw - 8rem), 1fr)*/
-            [content] 28em 1fr;
+    grid-template-columns: 1fr /*calc(36vw - 5rem) /*minmax(calc(36vw - 8rem), 1fr)*/
+                 [content] 28em
+                           1fr;
     grid-template-rows: auto 1fr auto;
     grid-row-gap: 0;
   }
@@ -63,9 +64,8 @@ html {
     grid-column-end: 3;
     margin: 0;
   }
-  #page__header, footer,
-  ul.posts {
-    margin-left: calc(36vw - 5rem);
+  #page__header, #page__footer {
+    margin: 0 auto;
   }
   .portfolio {
     grid-column: 1 / 4;
@@ -148,11 +148,8 @@ footer {
   text-decoration: underline;
 }
 
-/* Footer nav */
-#footer-nav {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
+#page__header, #page__footer {
+  max-width: 28rem;
 }
 
 #page__header:after,
