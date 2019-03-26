@@ -405,3 +405,9 @@ h1 a:link {
 h1 a:hover {
   color: var(--contrast-color);
 }
+
+/* Comments */
+.comments h4 {
+  text-transform: none;
+  letter-spacing: normal;
+}
