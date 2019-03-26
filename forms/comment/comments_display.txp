@@ -1,6 +1,7 @@
 <!-- if there are comments, display them (note: example code below overrides the global preference setting for comments wrapping by stating
      attributes of wraptag="" and break="", you are instead using ol and li tags below)... -->
 <txp:if_comments>
+    <hr>
 
     <section id="comments-head">
         <h3>
