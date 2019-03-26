@@ -259,8 +259,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  margin-top: 1.4rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: .6rem;
 }
 
 h1 {
