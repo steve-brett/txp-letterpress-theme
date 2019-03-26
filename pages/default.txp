@@ -83,10 +83,14 @@
                 <txp:else />
                     <!-- else is this the front page? -->
                     <txp:if_variable name="front-page">
-                        <!-- links by default to form: 'default.txp' unless you specify a different form -->
-                        <txp:article limit="5" />
-                        <txp:if_section name="default">
-                        <p>View <txp:section name="articles">more articles</txp:section>.</p>
+                        <txp:if_section name="about">
+                            <txp:article id="5" />
+                        <txp:else />
+                            <!-- links by default to form: 'default.txp' unless you specify a different form -->
+                            <txp:article limit="5" />
+                            <txp:if_section name="default">
+                            <p>View <txp:section name="articles">more articles</txp:section>.</p>
+                            </txp:if_section>
                         </txp:if_section>
 
                     <txp:else />
