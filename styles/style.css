@@ -282,10 +282,6 @@ h1::before {
   width: 1.4em;
 }
 
-article > ol, article > ul {
-  box-sizing: border-box;
-}
-
 blockquote {
   border-left: 2px dotted #ccc;
   font-size: 90%;
@@ -302,7 +298,6 @@ blockquote > *:last-child {
 }
 
 aside {
-  box-sizing: border-box;
   /*border: 1px solid #ccc;*/
   padding: .6em;
   font-size: 80%;
@@ -355,7 +350,6 @@ End override Prism styles
   border-bottom: 1px solid var(--contrast-color);
 }
 .portfolio-item {
-  box-sizing: border-box;
   /*border: 1px dashed #ccc;*/
   flex-grow: 1;
   flex-basis: 33%;
