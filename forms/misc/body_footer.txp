@@ -4,7 +4,7 @@
 
   <!-- if links exist, renders a links list -->
   <txp:evaluate test="linklist">
-      <section>
+      <section class="link-section">
           <h4><txp:text item="links" /></h4>
           <!-- links by default to form: 'plainlinks.txp' unless you specify a different form -->
           <txp:linklist wraptag="ul" break="li" />
