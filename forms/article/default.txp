@@ -55,7 +55,9 @@
                         <span itemprop="userInteractionCount"><txp:comments_count /></span>
                     </span>
                 </a>
+            </li>
             <txp:else />
+            <li>
                 <txp:if_comments_allowed>
                     <br>
                     <strong>
