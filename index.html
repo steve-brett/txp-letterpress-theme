@@ -260,9 +260,11 @@
         <!-- if there are comments, display them (note: example code below overrides the global preference setting for comments wrapping by stating
      attributes of wraptag="" and break="", you are instead using ol and li tags below)... -->
 
-    <hr>
+    <a href="" id="comments-toggle" onclick="toggle_visibility('comments-head');toggle_visibility('comments-form');return false;">Toggle comments</a>
 
     <section id="comments-head">
+    <hr>
+
         <h3>
             Comments
         </h3>
