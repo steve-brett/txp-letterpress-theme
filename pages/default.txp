@@ -70,9 +70,6 @@
 
     <txp:output_form form="body_header" />
 
-    <div class="wrapper">
-        <div class="container">
-
             <!-- Main content -->
             <main aria-label="<txp:text item="main_content" />" itemscope itemtype="https://schema.org/Blog">
 
@@ -124,8 +121,6 @@
 
             <txp:output_form form="body_aside" />
 
-        </div> <!-- /.container -->
-    </div> <!-- /.wrapper -->
 
     <txp:output_form form="body_footer" />
 
