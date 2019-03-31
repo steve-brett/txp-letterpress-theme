@@ -4,7 +4,7 @@ A Textpattern theme for my personal portfolio site.
 - forms
   - article
     - [ ] article_listing.txp
-    - [ ] default.txp
+    - [x] default.txp
     - [ ] search_results.txp
   - comment
     - [ ] comment_form.txp
@@ -29,3 +29,4 @@ A Textpattern theme for my personal portfolio site.
 
 ## To do
 - [ ] Change nav to flexbox?
+- [ ] Implement [CSS style guidelines](http://cssguidelin.es/)
