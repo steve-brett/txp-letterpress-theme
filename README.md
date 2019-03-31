@@ -20,7 +20,7 @@ A Textpattern theme for my personal portfolio site.
     - [x] body_footer.txp
     - [x] body_header.txp
     - [ ] images.txp
-    - [ ] search_display.txp
+    - [x] search_display.txp
     - [ ] search_input.txp
 - pages
   - [ ] archive.txp

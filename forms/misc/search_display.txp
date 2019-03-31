@@ -18,9 +18,9 @@
 
 <!-- if no search results, then display no search results message -->
 <txp:else />
-    <h3>
+    <p>
         <txp:text item="no_search_matches" />
-    </h3>
+    </p>
 
 </txp:if_search_results>
 
