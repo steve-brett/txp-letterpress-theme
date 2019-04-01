@@ -340,28 +340,8 @@ pre[class*="language-"] {
 End override Prism styles
 \* ----------- */
 
-.portfolio {
-  max-width: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: .6em 0;
-  border-top: 1px solid var(--contrast-color);
-  border-bottom: 1px solid var(--contrast-color);
-}
-.portfolio-item {
-  /*border: 1px dashed #ccc;*/
-  flex-grow: 1;
-  flex-basis: 33%;
-  font-size: 90%;
-  padding: .6rem;
-}
-.portfolio-item h2 {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  line-height: 1;
-  margin-top: 0;
-  letter-spacing: 2px;
+.portfolio-list {
+  columns: 3 12rem;
 }
 
   /* links */
