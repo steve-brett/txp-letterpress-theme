@@ -278,8 +278,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   display: inline-block;
   top: -1rem;
-  margin-left: -1.4em;
-  width: 1.4em;
+  margin-left: -2.8rem;
+  width: 2.8rem;
 }
 
 blockquote {
@@ -342,6 +342,13 @@ End override Prism styles
 
 .portfolio-list {
   columns: 3 12rem;
+}
+
+#comments-toggle::before {
+  content: "\02192";
+  position: absolute;
+  margin-left: -2.8rem;
+  color: #000;
 }
 
   /* links */
