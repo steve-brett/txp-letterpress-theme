@@ -1,6 +1,5 @@
 window.onload = function () {
-     document.getElementById("comments-head").style.display = "none";
-     document.getElementById("comments-form").style.display = "none";
+     document.getElementById("comments-area").style.display = "none";
 };
 
 function toggle_visibility(id) {

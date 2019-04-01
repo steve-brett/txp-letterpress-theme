@@ -2,8 +2,8 @@
      attributes of wraptag="" and break="", you are instead using ol and li tags below)... -->
 <txp:if_comments>
 
-    <a href="" id="comments-toggle" onclick="toggle_visibility('comments-head');toggle_visibility('comments-form');return false;">Toggle comments</a>
-
+    <a href="" id="comments-toggle" onclick="toggle_visibility('comments-area');return false;">Toggle comments</a>
+    <div id="comments-area">
     <section id="comments-head">
     <hr>
 
@@ -33,6 +33,8 @@
 <txp:else />
 
     <txp:if_comments_preview>
+        <div id="comments-area_preview">
+
         <section id="comments-head">
             <h3>
                 <txp:text item="comments" />
@@ -53,6 +55,8 @@
     <txp:else />
 
         <txp:if_comments_allowed>
+        <a href="" id="comments-toggle" onclick="toggle_visibility('comments-area');return false;">Toggle comments</a>
+        <div id="comments-area">
             <section id="comments-head">
                 <h3>
                     <txp:text item="comments" />
@@ -100,4 +104,5 @@
     <txp:if_comments_allowed>
         </section>
     </txp:if_comments_allowed>
+    </div>
 </txp:if_comments>
