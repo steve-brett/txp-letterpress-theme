@@ -57,8 +57,8 @@
                 </a>
             </li>
             <txp:else />
-            <li>
                 <txp:if_comments_allowed>
+                <li>
                     <br>
                     <strong>
                         <txp:text item="comments" />
@@ -69,8 +69,8 @@
                             <span itemprop="userInteractionCount">0</span>
                         </span>
                     </a>
+                </li>
                 </txp:if_comments_allowed>
-            </li>
             </txp:if_comments>
         </ul>
       </header>
