@@ -104,7 +104,8 @@
             <txp:if_article_list>
 
                 <h1 itemprop="name"><txp:section title /></h1>
-                <txp:article class="portfolio-list" form="article_listing" limit="10" category="webdev" expired="1" wraptag="ul" />
+                <p>Test</p>
+                <txp:article class="portfolio-list" form="portfolio_listing" limit="10" category="webdev" expired="1" wraptag="ul" />
                 <!-- ...or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
 
                 <!-- add pagination links to foot of article listings if there are more articles available -->
