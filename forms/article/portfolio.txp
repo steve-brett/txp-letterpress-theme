@@ -43,35 +43,7 @@
             </li>
             </txp:if_article_category>
 
-            <!-- only display comments count if comments posted, or if new comments allowed -->
-            <txp:if_comments>
-            <li>
-                <strong>
-                    <txp:text item="comments" />
-                </strong>
-                <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl">
-                    <span itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
-                        <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
-                        <span itemprop="userInteractionCount"><txp:comments_count /></span>
-                    </span>
-                </a>
-            </li>
-            <txp:else />
-                <txp:if_comments_allowed>
-                <li>
-                    <br>
-                    <strong>
-                        <txp:text item="comments" />
-                    </strong>
-                    <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl">
-                        <span itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
-                            <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
-                            <span itemprop="userInteractionCount">0</span>
-                        </span>
-                    </a>
-                </li>
-                </txp:if_comments_allowed>
-            </txp:if_comments>
+
         </ul>
       </header>
 
@@ -83,11 +55,6 @@
         <txp:body />
     </div>
 
-
-    <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
-    <txp:if_individual_article>
-        <txp:output_form form="comments_display" />
-    </txp:if_individual_article>
 
     <hr>
 
