@@ -102,10 +102,9 @@
 
         <txp:else />
             <txp:if_article_list>
-                <txp:category name="webdev">
-                    <h1 itemprop="name"><txp:category title="1" /></h1>
-                    <txp:article class="portfolio-list" form="portfolio_listing" limit="10" expired="1" wraptag="ul" />
-                </txp:category>
+
+                <h1 itemprop="name"><txp:category name="webdev" title="1" /></h1>
+                <txp:article class="portfolio-list" form="portfolio_listing" limit="10" category="webdev" expired="1" wraptag="ul" />
 
             <txp:else />
                 <txp:article status />
