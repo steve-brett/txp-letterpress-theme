@@ -2,5 +2,5 @@
         <a href="<txp:permlink />" itemprop="url mainEntityOfPage" title="<txp:text item="read_more" />">
             <txp:title />
         </a>
-        <txp:posted format="%Y" /> &emdash; <txp:if_expired><txp:expires format="%Y" /></txp:if_expired>
+        <txp:posted format="%Y" /> &mdash; <txp:if_expired><txp:expires format="%Y" /></txp:if_expired>
 </li>
